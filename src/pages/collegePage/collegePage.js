@@ -63,10 +63,10 @@ export const CollegePage = () => {
               </div>
             ))}
         <div className="wrapper mx-4 font-bold">{t('allCollege')}</div>
-        <div className="wrapper mb-[62px] mt-[164px] 2sm:mr-4 w-full">
+        <div className="wrapper pb-[32px] mt-[164px] 2sm:mr-4 w-full">
           {result &&
             result.results.map((item) => (
-              <div key={item.id} className="flex flex-wrap w-full">
+              <div key={item.id} className="flex flex-wrap w-full mb-4">
                 <div className="shadow-enroll py-[10px] px-[30px] my-4 align-middle rounded-[12px] w-full cursor-pointer hover:shadow-2xl sm:px-[10px]">
                   <div className="flex flex-wrap items-center xs:justify-center">
                     <div className="flex justify-center items-center pr-[10px] mr-[12px] w-auto h-[80px] overflow-hidden xs:pr-0 mb-1">

@@ -63,7 +63,7 @@ export const UniverPage = () => {
             </div>
           ))}
       <div className="wrapper font-bold">{t('allUniver')}</div>
-      <div className="wrapper mb-[62px] mt-[164px] 2sm:mr-4 w-full">
+      <div className="wrapper pb-[32px] mt-[164px] 2sm:mr-4 w-full">
         {result &&
           result.results.map((item) => (
             <div key={item.id} className="flex flex-wrap w-full mb-4">
@@ -93,7 +93,9 @@ export const UniverPage = () => {
                   )}
                 </div>
                 <div className="1sm:text-sm">
-                  <span className="font-bold">{t('location')}</span>
+                  <span className="font-normal font-semibold">
+                    {t('location')}
+                  </span>
                   {i18n.language === 'ky' && (
                     <span className="text-black 1sm:text-sm">
                       &nbsp;

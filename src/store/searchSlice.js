@@ -1,21 +1,27 @@
 import { createSlice } from '@reduxjs/toolkit';
-import {asyncHolder, asyncSearch, asyncTitle} from "./asyncAction";
 
 const searchSlice = createSlice({
-    name: 'search',
-    initialState: {
-        data: [],
+  name: 'search',
+  initialState: {
+    data: [],
+    isEmpty: true,
+  },
+  reducers: {
+    getSearchSuccess(state, action) {
+      state.data = action.payload;
+      const isEmpty = (obj) => {
+        for (let k in obj) {
+          if (obj[k].length > 0) {
+            return false;
+          }
+        }
+        return true;
+      };
+      state.isEmpty = isEmpty(action.payload);
     },
-    reducers: {
-    },
-    extraReducers: (builder) => {
-        builder
-            .addCase(asyncSearch.fulfilled,
-                (state, action) => {
-                    state.data = action.payload;
-                })
-    },
+  },
 });
 
+export const { getSearchSuccess } = searchSlice.actions;
 
 export default searchSlice.reducer;

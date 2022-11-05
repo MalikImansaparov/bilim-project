@@ -20,10 +20,10 @@ function App() {
           />
         ))}
       </Routes>
-        <div className="box-border min-h-[100%] pb-[80px]"></div>
-        <div className="h-[80px] mt-[-80px]">
-            <Footer/>
-        </div>
+      <div className="box-border min-h-[100%] pb-[80px]"></div>
+      <div className="h-[80px] mt-[-80px]">
+        <Footer />
+      </div>
     </div>
   );
 }

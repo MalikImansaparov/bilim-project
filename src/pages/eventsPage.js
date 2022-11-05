@@ -94,7 +94,7 @@ const EventsPage = () => {
                           ? item.title_ru.slice(0, 60) + '...'
                           : item.title_ru}
                       </p>
-                      <p className="text-base font-normal w-[324px] h-[38px] grey overflow-hidden leading-[19px]">
+                      <p className="text-base font-normal w-[100%] h-[38px] grey overflow-hidden leading-[19px]">
                         <Sanitized html={item.desc_ru} />
                       </p>
                     </>
@@ -106,7 +106,7 @@ const EventsPage = () => {
                           ? item.title_en.slice(0, 60) + '...'
                           : item.title_en}
                       </p>
-                      <p className="text-base font-normal w-[324px] h-[38px] grey overflow-hidden leading-[19px]">
+                      <p className="text-base font-normal w-[100%] h-[38px] grey overflow-hidden leading-[19px]">
                         <Sanitized html={item.desc_en} />
                       </p>
                     </>

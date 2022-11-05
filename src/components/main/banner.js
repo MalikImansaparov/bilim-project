@@ -58,8 +58,8 @@ const Banner = () => {
                   className="w-full h-[481px] object-cover bg-no-repeat absolute left-0 top-0 z-10"
                 />
                 <div
-                  className="h-[481px] max-w-[900px] 3xs:w-[600px] md:h-[980px]
-                  3xs:h-[1200px] overflow-hidden absolute right-0 top-0"
+                  className="h-[481px] max-w-[900px] md:h-[1080px]
+                  3xs:h-[1400px] overflow-hidden absolute right-0 top-0 3xs:top- 1sm:top-6 1xs:top-8 2xs:top-14 xs:top-16"
                 >
                   <img
                     src={uri + item.background_image}
@@ -68,35 +68,35 @@ const Banner = () => {
                   />
                 </div>
                 <div
-                  className="container max-w-[1236px] m-auto h-[481px] md:h-[350px]  text-white bg-gradient-banner opacity-[100%] absolute top-0 left-0 right-0 flex
+                  className="container max-w-[1236px] m-auto h-[481px] md:h-[350px] text-white bg-gradient-banner opacity-[100%] absolute top-0 left-0 right-0 flex
                 items-center z-10 xl:max-w-[1090px] 2lg:max-w-[900px] lg:max-w-[800px] 2md:max-w-[700px] md:max-w-[600px]"
                 >
                   {i18n.language === 'ky' && (
                     <div className="ml-[50px] items-center 2lg:ml-[40px] lg:ml-[30px] 2md:ml-[20px] md:ml-[15px]">
-                      <p className="text-[32px] font-bold xl:text-[28px] lg:text-[24px] md:text-[20px] sm:text-[18px] 1xs:text-[16px]">
+                      <p className="text-[30px] font-normal xl:text-[26px] lg:text-[24px] md:text-[20px] sm:text-[18px] 1xs:text-[16px]">
                         <Sanitized html={item.title_ky} />
                       </p>
-                      <p className="mt-[26px] font-normal text-[26px] xl:text-[20px] md:text-[18px] sm:text-[16px] 1xs:text-[14px]">
+                      <p className="mt-[26px] font-normal text-[24px] xl:text-[20px] md:text-[18px] sm:text-[16px] 1xs:text-[14px]">
                         <Sanitized html={item.subtitle_ky} />
                       </p>
                     </div>
                   )}
                   {i18n.language === 'ru' && (
                     <div className="ml-[50px] items-center 2lg:ml-[40px] lg:ml-[30px] 2md:ml-[20px] md:ml-[15px]">
-                      <p className="text-[32px] font-bold xl:text-[28px] lg:text-[24px] md:text-[20px] sm:text-[18px] 1xs:text-[16px]">
+                      <p className="text-[30px] font-bold xl:text-[26px] lg:text-[24px] md:text-[20px] sm:text-[18px] 1xs:text-[16px]">
                         <Sanitized html={item.title_ru} />
                       </p>
-                      <p className="mt-[26px] font-normal text-[26px] xl:text-[20px] md:text-[18px] sm:text-[16px] 1xs:text-[14px]">
+                      <p className="mt-[26px] font-normal text-[24px] xl:text-[20px] md:text-[18px] sm:text-[16px] 1xs:text-[14px]">
                         <Sanitized html={item.subtitle_ru} />
                       </p>
                     </div>
                   )}
                   {i18n.language === 'en' && (
                     <div className="ml-[50px] items-center 2lg:ml-[40px] lg:ml-[30px] 2md:ml-[20px] md:ml-[15px]">
-                      <p className="text-[32px] font-bold xl:text-[28px] lg:text-[24px] md:text-[20px] sm:text-[18px] 1xs:text-[16px]">
+                      <p className="text-[30px] font-bold xl:text-[26px] lg:text-[24px] md:text-[20px] sm:text-[18px] 1xs:text-[16px]">
                         <Sanitized html={item.title_en} />
                       </p>
-                      <p className="mt-[26px] font-normal text-[26px] xl:text-[20px] md:text-[18px] sm:text-[16px] 1xs:text-[14px]">
+                      <p className="mt-[26px] font-normal text-[24px] xl:text-[20px] md:text-[18px] sm:text-[16px] 1xs:text-[14px]">
                         <Sanitized html={item.subtitle_en} />
                       </p>
                     </div>
