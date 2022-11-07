@@ -105,9 +105,9 @@ export const GrantPage = () => {
                      {item.title_en}
                    </p>
                  )}
-                 <div className="flex flex-wrap mt-4 mb-1 max-w-[500px] justify-between w-full 2md:text-[12px]">
+                 <div className="flex flex-wrap mt-4 mb-1 max-w-[700px] justify-between w-full 2md:text-[12px]">
                    {item.deadline && (
-                     <div className="flex 1xs:mt-1">
+                     <div className="flex 1xs:mt-1 w-[200px 1md:w-[150px]">
                        <svg
                          xmlns="http://www.w3.org/2000/svg"
                          fill="none"
@@ -131,7 +131,7 @@ export const GrantPage = () => {
                      </div>
                    )}
                    {item.period && (
-                     <div className="flex 1xs:mt-1">
+                     <div className="flex 1xs:mt-1 w-[300px] 1md:w-[200px]">
                        <svg
                          xmlns="http://www.w3.org/2000/svg"
                          fill="none"
@@ -154,9 +154,9 @@ export const GrantPage = () => {
                    )}
                  </div>
 
-                 <div className="flex flex-wrap 2md:text-[12px] max-w-[500px] justify-between w-full mb-4">
+                 <div className="flex flex-wrap 2md:text-[12px] max-w-[700px] justify-between w-full mb-4">
                    {item.grant_amount && (
-                     <div className="flex 1xs:mt-1">
+                     <div className="flex 1xs:mt-1 w-[200px] 1md:w-[150px]">
                        <svg
                          xmlns="http://www.w3.org/2000/svg"
                          fill="none"
@@ -178,7 +178,7 @@ export const GrantPage = () => {
                      </div>
                    )}
                    {item.place_ky && (
-                     <div className="flex 1xs:mt-1">
+                     <div className="flex flex-wrap 1xs:mt-1 w-[300px] 1md:w-[200px]">
                        <svg
                          xmlns="http://www.w3.org/2000/svg"
                          fill="none"
