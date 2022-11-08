@@ -41,12 +41,6 @@ const Menu = () => {
       {!openModal ? (
         <div className="bg-[#27376C]">
           <div className="wrapper h-[78px] text-white flex justify-between items-center font-inter cursor-pointer">
-            <img
-              src={logo}
-              className="lg:hidden"
-              alt="kelechek"
-              onClick={() => navigate('/')}
-            />
             <div
               className="hidden lg:block cursor-pointer"
               onClick={toggleMenu}
@@ -57,6 +51,8 @@ const Menu = () => {
                 <img src={burger} alt="open" />
               )}
             </div>
+            <img src={logo} alt="kelechek" onClick={() => navigate('/')} />
+
             <div className="flex w-[40%] pt-2 justify-between lg:hidden">
               <NavLink
                 to=""
@@ -92,7 +88,7 @@ const Menu = () => {
                 {t('traning')}
               </NavLink>
             </div>
-            <div className="flex justify-between w-[25%] pt-2 lg:w-[30%] 2md:w-[35%] xs:w-[60%] 1sm:w-[50%] 2xs:w-[70%]">
+            <div className="flex justify-between w-[20%] pt-2 2lg:w-[10%] lg:w-15%] 2md:w-[15%] xs:w-[25%] 1sm:w-[20%] 2xs:w-[27%] 2xs:pr-2">
               <Language />
               <img
                 src={search}
@@ -100,7 +96,9 @@ const Menu = () => {
                 className="w-[20px] h-[20px] cursor-pointer"
                 onClick={toggleModal}
               />
-              <Social />
+              <div className="2lg:hidden">
+                <Social />
+              </div>
             </div>
           </div>
         </div>
