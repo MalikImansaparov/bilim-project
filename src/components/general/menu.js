@@ -16,10 +16,6 @@ const Menu = () => {
   const navigate = useNavigate();
   const [openModal, setOpenModal] = useState(false);
   const [openBurger, setOpenBurger] = useState(false);
-  const [show, setShow] = useState(false);
-  const [arrow, setArrow] = useState(false);
-  const [isShow, setIsShow] = useState(false);
-  const [showProject, setIsProject] = useState(false);
   const { t } = useTranslation();
   const dispatch = useDispatch();
 

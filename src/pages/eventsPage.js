@@ -60,7 +60,7 @@ const EventsPage = () => {
         <div className="container">
           <BreadCrumb />
         </div>
-        <div className="flex justify-around flex-wrap text-justify wrapper">
+        <div className="flex justify-around flex-wrap wrapper">
           {response.results &&
             response.results.map((item) => (
               <Link

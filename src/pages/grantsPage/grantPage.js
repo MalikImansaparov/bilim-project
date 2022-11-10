@@ -203,7 +203,7 @@ export const GrantPage = () => {
                        )}
                        {i18n.language === 'ru' && (
                          <p className="ml-1 flex items-center">
-                           <span className="font-bol mr-0.5d">
+                           <span className="font-bold mr-0.5">
                              {t('where')}{' '}
                            </span>{' '}
                            {item.place_ru}

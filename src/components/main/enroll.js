@@ -92,7 +92,7 @@ export const Enroll = () => {
                         <div className="max-w-[561px]">
                           {i18n.language === 'ky' && (
                             <>
-                              <p className="text-[22px] text-semibold text-white max-w-[461px] mb-[18px] 2md:text-[18px] sm:text-[16px] sm:mb-[0px] text-bold h-[58px] overflow-hidden">
+                              <p className="text-[22px] text-semibold text-blue max-w-[461px] mb-[18px] 2md:text-[18px] sm:text-[16px] sm:mb-[0px] text-bold h-[62px] overflow-hidden">
                                 <Sanitized
                                   html={
                                     item.title_ky.length > 62
@@ -101,14 +101,14 @@ export const Enroll = () => {
                                   }
                                 />
                               </p>
-                              <p className="text-[16px] text-normal max-h-[38px] grey overflow-y-hidden leading-[19px] 2md:text-[14px] sm:text-[12px]">
+                              <p className="text-[16px] text-normal max-h-[38px]  grey overflow-y-hidden leading-[19px] 2md:text-[14px] sm:text-[12px]">
                                 <Sanitized html={item.desc_ky} />
                               </p>
                             </>
                           )}
                           {i18n.language === 'ru' && (
                             <>
-                              <p className="text-[22px] text-semibold text-white max-w-[461px] mb-[18px] 2md:text-[18px] sm:text-[16px] sm:mb-[0px] text-bold h-[58px] overflow-hidden">
+                              <p className="text-[22px] text-semibold text-blue max-w-[461px] mb-[18px] 2md:text-[18px] sm:text-[16px] sm:mb-[0px] text-bold h-[62px] overflow-hidden">
                                 <Sanitized
                                   html={
                                     item.title_ru.length > 62
@@ -124,7 +124,7 @@ export const Enroll = () => {
                           )}
                           {i18n.language === 'en' && (
                             <>
-                              <p className="text-[22px] text-semibold text-white max-w-[461px] mb-[18px] 2md:text-[18px] sm:text-[16px] sm:mb-[0px] text-bold h-[58px] overflow-hidden">
+                              <p className="text-[22px] text-semibold text-blue max-w-[461px] mb-[18px] 2md:text-[18px] sm:text-[16px] sm:mb-[0px] text-bold h-[58px] overflow-hidden">
                                 <Sanitized
                                   html={
                                     item.title_en.length > 62

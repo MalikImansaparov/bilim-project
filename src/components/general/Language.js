@@ -23,7 +23,10 @@ export const Language = () => {
       </button>
       {openModal && (
         <ul className="absolute z-10 cursor-pointer">
-          <li className="btn-blue mt-[26px]" onClick={() => onChange('ky')}>
+          <li
+            className="btn-blue mt-[26px] 2lg:mt-[20px]"
+            onClick={() => onChange('ky')}
+          >
             <>Кыргызча</>
           </li>
           <li className="btn-blue" onClick={() => onChange('ru')}>
