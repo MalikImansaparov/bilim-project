@@ -13,9 +13,8 @@ import {settings} from "../slider/settings";
 
 export const News = () => {
     const { response } = useFetch(base + newsUrl + '/news/src/bilim/');
-    const swiperRef = useRef();
     const { t, i18n } = useTranslation();
-
+    console.log(response);
     return (
       <div className="container m-auto max-w-[1236px] pt-[62px] relative mb-[62px] z-10">
         <div className="flex wrapper justify-between">
@@ -25,6 +24,7 @@ export const News = () => {
           </Link>
         </div>
         <div className="flex justify-center flex-wrap wrapper">
+          {' '}
           {response &&
             response.results.map((item) => (
               <Link

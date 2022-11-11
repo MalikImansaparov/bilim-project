@@ -89,7 +89,7 @@ const Menu = () => {
               <img
                 src={search}
                 alt="search"
-                className="w-[20px] h-[20px] cursor-pointer"
+                className="w-[20px] h-[20px] mt-1 cursor-pointer"
                 onClick={toggleModal}
               />
               <div className="2lg:hidden">
