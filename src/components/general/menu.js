@@ -84,7 +84,7 @@ const Menu = () => {
                 {t('traning')}
               </NavLink>
             </div>
-            <div className="flex justify-between w-[20%] pt-2 2lg:w-[10%] lg:w-15%] 2md:w-[15%] xs:w-[25%] 1sm:w-[20%] 2xs:w-[27%] 2xs:pr-2">
+            <div className="flex justify-between w-[20%] pt-2 2lg:w-[10%] xl:w-[25%] lg:w-15%] 2md:w-[15%]  xs:w-[25%] 1sm:w-[20%] 2xs:w-[27%] 2xs:pr-2">
               <Language />
               <img
                 src={search}
@@ -104,7 +104,7 @@ const Menu = () => {
             <input
               type="text"
               autoFocus={true}
-              className="bg-blueLight border-none outline-none w-[98.5%] h-[24px] font-medium text-[15px] 2md:w-[96.5%] xs:2md:w-[94.5%]"
+              className="bg-blueLight border-none outline-none w-[98.5%] h-[24px] font-medium text-[15px] lg:w-[96.5%] 2md:w-[94.5%]"
               placeholder={t('search')}
               onKeyDown={(e) =>
                 e.key === 'Enter' && handleChange(e.target.value)
