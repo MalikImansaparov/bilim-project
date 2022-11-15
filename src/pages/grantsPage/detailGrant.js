@@ -75,7 +75,6 @@ const DetailGrants = () => {
                       </p>
                     </div>
                   )}
-                  n
                   {response.period && (
                     <div className="flex 1xs:mt-1 mr-1 w-[220px] 1md:w-[170px]">
                       <svg

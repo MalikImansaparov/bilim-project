@@ -17,7 +17,7 @@ const SearchPage = () => {
   }
 
   return (
-    <div className="wrapper py-[62px] font-inter sm:py-[48px] xs:py-[24px] h-[70%]">
+    <div className="wrapper py-[62px] font-inter sm:py-[48px] xs:py-[24px] h-[70%] min-h-[100vh]">
       {isEmpty && (
         <div className="flex w-[1236px] m-auto shadow-md rounded px-8 my-8 bg-white">
           <p className="my-16 text-[20px]">{t('notFound')}</p>
@@ -25,6 +25,76 @@ const SearchPage = () => {
       )}
       {items && (
         <div className=" w-[1236px] shadow-md rounded px-8 mb-8 bg-white 3xs:px-4 2xs:px-2">
+          {items.news && items.news.length > 0 && (
+            <p className="font-medium mt-4">
+              {t('news')}
+              <span className="ml-1">({items.news.length})</span>
+            </p>
+          )}
+          {items.news &&
+            items.news.map((item, idx) => (
+              <div key={idx} className="mb-4">
+                {i18n.language === 'ky' && (
+                  <div
+                    onClick={() => window.location.replace(item.next)}
+                    className="text-[16px] my-2 font-medium text-blue cursor-pointer"
+                  >
+                    {item.title_ky}
+                  </div>
+                )}
+                {i18n.language === 'ru' && (
+                  <div
+                    onClick={() => window.location.replace(item.next)}
+                    className="text-[16px] my-2 font-medium text-blue cursor-pointer"
+                  >
+                    {item.title_ru}
+                  </div>
+                )}
+                {i18n.language === 'en' && (
+                  <div
+                    onClick={() => window.location.replace(item.next)}
+                    className="text-[16px] my-2 font-medium text-blue cursor-pointer"
+                  >
+                    {item.title_en}
+                  </div>
+                )}
+              </div>
+            ))}
+          {items.events && items.events.length > 0 && (
+            <p className="font-medium mt-4">
+              {t('events')}
+              <span className="ml-1">({items.events.length})</span>
+            </p>
+          )}
+          {items.events &&
+            items.events.map((item, idx) => (
+              <div key={idx} className="mb-4">
+                {i18n.language === 'ky' && (
+                  <div
+                    onClick={() => window.open.replace(item.next)}
+                    className="text-[16px] my-2 font-medium text-blue cursor-pointer"
+                  >
+                    {item.title_ky}
+                  </div>
+                )}
+                {i18n.language === 'ru' && (
+                  <div
+                    onClick={() => window.location.replace(item.next)}
+                    className="text-[16px] my-2 font-medium text-blue cursor-pointer"
+                  >
+                    {item.title_ru}
+                  </div>
+                )}
+                {i18n.language === 'en' && (
+                  <div
+                    onClick={() => window.location.replace(item.next)}
+                    className="text-[16px] my-2 font-medium text-blue cursor-pointer"
+                  >
+                    {item.title_en}
+                  </div>
+                )}
+              </div>
+            ))}
           {items.institute && items.institute.length > 0 && (
             <p className="font-medium mt-4">
               {t('univer')}
@@ -97,7 +167,7 @@ const SearchPage = () => {
             ))}
           {items.grant && items.grant.length > 0 && (
             <p className="font-medium mt-4">
-              {t('partners')}
+              {t('grants')}
               <span className="ml-1">({items.grant.length})</span>
             </p>
           )}
