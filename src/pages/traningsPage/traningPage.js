@@ -60,7 +60,7 @@ export const TrainingPage = () => {
     )
   }
   return (
-    <div className="h-auto font-inter">
+    <div className="h-auto font-inter min-h-[90vh]">
       <div className="wrapper ">
         <BreadCrumb />
       </div>

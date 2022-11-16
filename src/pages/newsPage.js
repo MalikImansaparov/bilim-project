@@ -57,7 +57,7 @@ const NewsPage = () => {
       <div className="container">
         <BreadCrumb />
       </div>
-      <div className="flex justify-center flex-wrap wrapper">
+      <div className="flex justify-center flex-wrap wrapper min-h-[70vh]">
         {response.results &&
           response.results.map((item) => (
             <Link
