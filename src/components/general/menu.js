@@ -1,9 +1,9 @@
-import React, { Component, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import search from '../../assets/image/main/search-icon.png';
 import Social from './social';
 import close from '../../assets/image/main/close.png';
-import { useNavigate } from 'react-router';
+import { useNavigate, useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Language } from './Language';
 import logo from '../../assets/header/Frame 5051.svg';
@@ -18,6 +18,8 @@ const Menu = () => {
   const [openBurger, setOpenBurger] = useState(false);
   const { t } = useTranslation();
   const dispatch = useDispatch();
+  // const location = useLocation();
+  // const searches = location.pathname === "/search"
 
   const toggleModal = () => {
     setOpenModal(!openModal);
@@ -31,6 +33,16 @@ const Menu = () => {
   const toggleMenu = () => {
     setOpenBurger(!openBurger);
   };
+
+  //  useEffect(() => {
+  //        if(searches){
+  //            setOpenSearch(true)
+  //            setOpenModal(false);
+  //        } else {
+  //            setOpenSearch(false)
+  //            setOpenModal(true);
+  //        }
+  //     },[location])
 
   return (
     <div className="relative mb-0">

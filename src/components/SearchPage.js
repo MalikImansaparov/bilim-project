@@ -11,6 +11,7 @@ const SearchPage = () => {
   if (!items) {
     return (
       <div role="status" className="flex justify-center my-28 pb-24">
+        git
         <ClipLoader color="#1985A1" size={300} />
       </div>
     );
