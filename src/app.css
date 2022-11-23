@@ -31,7 +31,11 @@ btn-blue:hover {
 }
 
 .menu {
-  @apply flex text-white text-[15px] text-sm font-semibold ;
+  @apply flex text-white text-[15px] text-sm font-normal ;
+}
+
+.menu:hover {
+@apply text-[red]
 }
 
 .menus {

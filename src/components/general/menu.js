@@ -45,10 +45,10 @@ const Menu = () => {
   //     },[location])
 
   return (
-    <div className="relative mb-0">
+    <div className="relative mb-0 w-full">
       {!openModal ? (
-        <div className="bg-[#27376C]">
-          <div className="wrapper h-[78px] text-white flex justify-between items-center font-inter cursor-pointer">
+        <div className="bg-[#27376C] ">
+          <div className="wrapper w-full h-[78px] text-white flex justify-between items-center font-inter cursor-pointer">
             <div
               className="hidden lg:block cursor-pointer"
               onClick={toggleMenu}
@@ -62,15 +62,12 @@ const Menu = () => {
             <img src={logo} alt="kelechek" onClick={() => navigate('/')} />
 
             <div className="flex w-[40%] pt-2 justify-between lg:hidden">
-              <NavLink
-                to=""
-                className={({ isActive }) =>
-                  isActive ? 'hover menu text-white' : 'menu text-white'
-                }
+              <div
+                className="menu text-white"
                 onClick={() => window.open('https://jashtar.info/')}
               >
                 {t('about')}
-              </NavLink>
+              </div>
               <NavLink
                 to="/university"
                 className={({ isActive }) => (isActive ? 'hover menu' : 'menu')}

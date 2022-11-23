@@ -26,7 +26,7 @@ const Banner = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative w-full">
       <Swiper
         autoplay={{
           delay: 6000,
@@ -58,7 +58,7 @@ const Banner = () => {
                   className="w-full h-[481px] object-cover bg-no-repeat absolute left-0 top-0 z-10"
                 />
                 <div
-                  className="h-[481px] max-w-[900px] md:h-[1080px]
+                  className="h-[481px] max-w-full md:h-[1080px]
                   3xs:h-[1400px] overflow-hidden absolute right-0 top-0 3xs:top- 1sm:top-6 1xs:top-8 2xs:top-14 xs:top-16"
                 >
                   <img
