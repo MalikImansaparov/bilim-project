@@ -62,32 +62,37 @@ export const UniverPage = () => {
               </div>
             </div>
           ))}
-      <div className="wrapper font-bold">{t('allUniver')}</div>
-      <div className="wrapper pb-[32px] mt-[164px] 2sm:mr-4 w-full">
+      <div className="mx-4 font-bold lg:max-w-[500px] 1xs:ml-3 ml-12">
+        {t('allUniver')}
+      </div>
+      <div className="wrapper pb-[32px] mt-[164px] 2sm:mr-4 1sm:mr-8 lg:max-w-[450px] justify-between  1xs:ml-4">
         {result &&
           result.results.map((item) => (
-            <div key={item.id} className="flex flex-wrap w-full mb-4">
-              <div className="shadow-enroll py-[10px] px-[30px] my-4 align-middle rounded-[12px] w-full cursor-pointer hover:shadow-2xl sm:px-[10px]">
-                <div className="flex flex-wrap items-center xs:justify-center">
-                  <div className="flex justify-center items-center pr-[10px] mr-[12px] w-auto h-[80px] overflow-hidden xs:pr-0 mb-1">
+            <div
+              key={item.id}
+              className="flex flex-wrap  xl:w-[500px] 3sm:w-[300px] mb-4"
+            >
+              <div className="shadow-enroll py-[10px] px-[30px] my-4 align-middle rounded-[12px] cursor-pointer hover:shadow-2xl sm:px-[10px] xl:px-[20px]">
+                <div className="flex lg:wrapper items-center">
+                  <div className="float-left text-center pr-[10px] mr-[12px] w-auto h-[80px] overflow-hidden xs:pr-0 mb-1">
                     <img
                       src={uri + item.image}
                       alt="organization"
-                      className="w-auto h-[100%] self-center"
+                      className="w-[80px] h-[100%] self-center mr-1"
                     />
                   </div>
                   {i18n.language === 'ky' && (
-                    <span className="font-normal text-base 1sm:text-sm max-w-[1100px]">
+                    <span className="font-semibold text-base 1sm:text-sm w-[420px] xl:w-[360px] 2lg:w-[300px]">
                       {item.title_ky}
                     </span>
                   )}
                   {i18n.language === 'ru' && (
-                    <p className="font-normal text-base 1sm:text-sm max-w-[1100px]">
+                    <p className="font-semibold text-base 1sm:text-sm">
                       {item.title_ru}
                     </p>
                   )}
                   {i18n.language === 'en' && (
-                    <p className="font-normal text-base 1sm:text-sm max-w-[1100px]">
+                    <p className="font-semibold text-base 1sm:text-sm">
                       {item.title_en}
                     </p>
                   )}
