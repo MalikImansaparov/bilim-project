@@ -121,25 +121,25 @@ const NewsPage = () => {
           ))}
       </div>
       <div className="paginate">
-        {response.results && response.results.length >= 9 && (
-          <ReactPaginate
-            nextLabel="❯"
-            onPageChange={handlePageClick}
-            pageRangeDisplayed={3}
-            marginPagesDisplayed={2}
-            pageCount={pageCount}
-            previousLabel="❮"
-            pageClassName="page-item"
-            pageLinkClassName="page-link"
-            previousClassName="page-item"
-            previousLinkClassName="page-link"
-            nextClassName="page-item"
-            nextLinkClassName="page-link"
-            containerClassName="pagination"
-            activeClassName="active"
-            renderOnZeroPageCount={null}
-          />
-        )}
+        {/* {response.results && response.results.length >= 9 && ( */}
+        <ReactPaginate
+          nextLabel="❯"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={3}
+          marginPagesDisplayed={2}
+          pageCount={pageCount}
+          previousLabel="❮"
+          pageClassName="page-item"
+          pageLinkClassName="page-link"
+          previousClassName="page-item"
+          previousLinkClassName="page-link"
+          nextClassName="page-item"
+          nextLinkClassName="page-link"
+          containerClassName="pagination"
+          activeClassName="active"
+          renderOnZeroPageCount={null}
+        />
+        {/* )} */}
       </div>
     </div>
   );

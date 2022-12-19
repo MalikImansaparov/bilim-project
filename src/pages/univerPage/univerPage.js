@@ -33,7 +33,11 @@ export const UniverPage = () => {
             <div
               className="w-full mb-[34px] object-cover bg-center"
               key={item.id}
-              style={{ backgroundImage: `url(${uri}${item.background_image})` }}
+              style={{
+                backgroundImage: `url(${uri}${item.background_image})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+              }}
             >
               <div className="w-full min-h-[481px] md:min-h-[581px] overflow-hidden relative z-0 pb-8 font-inter">
                 <div className="absolute top-0 left-0 right-0 bg-gradient-ministry w-full min-h-[481px] md:min-h-[581px] z-0"></div>
@@ -62,7 +66,7 @@ export const UniverPage = () => {
               </div>
             </div>
           ))}
-      <div className="mx-4 font-bold lg:max-w-[500px] 1xs:ml-3 ml-12">
+      <div className="wrapper mx-4 font-bold lg:max-w-[500px] 1xs:ml-3 ml-12">
         {t('allUniver')}
       </div>
       <div className="wrapper pb-[32px] mt-[164px] 2sm:mr-4 1sm:mr-8 lg:max-w-[450px] justify-between  1xs:ml-4">

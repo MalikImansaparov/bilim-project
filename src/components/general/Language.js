@@ -20,7 +20,7 @@ export const Language = () => {
     <div className="group relative mt-1">
       <button className="flex text-white relative" onClick={toggleModal}>
         <img src={lang} className="pt-2 mr-[7px] relative" alt="lang" />
-        <span className="text-[15px] font-">{t('lang')}</span>
+        <span className="text-[15px] ">{t('lang')}</span>
       </button>
       {openModal && (
         <ul className="absolute z-10 cursor-pointer">
